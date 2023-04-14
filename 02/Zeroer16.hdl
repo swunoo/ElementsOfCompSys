@@ -1,0 +1,24 @@
+// Helper Function
+
+CHIP Zeroer16 {
+    IN in[16];
+    OUT out[16];
+
+    PARTS:
+    And(a=in[0], b=false, out=out[0]);
+    And(a=in[1], b=false, out=out[1]);
+    And(a=in[2], b=false, out=out[2]);
+    And(a=in[3], b=false, out=out[3]);
+    And(a=in[4], b=false, out=out[4]);
+    And(a=in[5], b=false, out=out[5]);
+    And(a=in[6], b=false, out=out[6]);
+    And(a=in[7], b=false, out=out[7]);
+    And(a=in[8], b=false, out=out[8]);
+    And(a=in[9], b=false, out=out[9]);
+    And(a=in[10], b=false, out=out[10]);
+    And(a=in[11], b=false, out=out[11]);
+    And(a=in[12], b=false, out=out[12]);
+    And(a=in[13], b=false, out=out[13]);
+    And(a=in[14], b=false, out=out[14]);
+    And(a=in[15], b=false, out=out[15]);
+}

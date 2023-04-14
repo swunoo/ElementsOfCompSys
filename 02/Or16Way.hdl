@@ -1,0 +1,23 @@
+// Helper Function
+
+CHIP Or16Way {
+    IN in[16];
+    OUT out;
+
+    PARTS:
+    Or(a=in[0], b=in[1], out=d);
+    Or(a=in[2], b=d, out=e);
+    Or(a=in[3], b=e, out=f);
+    Or(a=in[4], b=f, out=g);
+    Or(a=in[5], b=g, out=h);
+    Or(a=in[6], b=h, out=i);
+    Or(a=in[7], b=i, out=j);
+    Or(a=in[8], b=j, out=k);
+    Or(a=in[9], b=k, out=l);
+    Or(a=in[10], b=l, out=m);
+    Or(a=in[11], b=m, out=n);
+    Or(a=in[12], b=n, out=o);
+    Or(a=in[13], b=o, out=p);
+    Or(a=in[14], b=p, out=q);
+    Or(a=in[15], b=q, out=out);
+}
